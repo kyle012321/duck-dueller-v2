@@ -13,7 +13,7 @@ import best.spaghetcodes.duckdueller.utils.*
 import net.minecraft.init.Blocks
 import net.minecraft.util.Vec3
 
-class Classic : BotBase("/play duels_bow_duel"), Bow, Rod, MovePriority {
+class Classic : BotBase("/play duels_blitz_duel"), Bow, Rod, MovePriority {
 
     override fun getName(): String {
         return "Classic"
@@ -30,7 +30,7 @@ class Classic : BotBase("/play duels_bow_duel"), Bow, Rod, MovePriority {
     }
 
     var shotsFired = 0
-    var maxArrows = 1000
+    var maxArrows = 100
 
     override fun onGameStart() {
         Movement.startSprinting()
